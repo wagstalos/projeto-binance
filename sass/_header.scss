@@ -1,0 +1,90 @@
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 72px;
+    // background: radial-gradient(circle at 3% 25%,#433508 0,#040c18 25%);
+    border-bottom: solid #fbe62149 0.5px;
+    display: flex;
+    position: absolute;
+    .logo{
+        width: 176px;
+    }
+    .container{
+        @include flex (row, center, space-between)
+    }
+    .itens{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+    }
+    nav{
+        ul{
+            display: flex;
+            a{
+                color: $white;
+                font-size: 1.6rem;
+                transition: color .5s;
+                &:hover{
+                    color: $yellow;
+                }
+            }
+            li{
+                margin-right: 56px;
+         
+            }
+        }
+    }
+    button{
+        color: $white;
+        font-size: 1.4rem;
+        display: flex;
+        align-items: center;
+        border: 1px solid $yellow;
+        padding: 10px 25px;
+        border-radius: 10px;
+        &:before{
+            content:  url('./../img/icon-star.svg');
+            margin-right: 16px;
+        }
+    }
+    .icon-menu-mobile{
+        display: none;
+        .menu-mobile{
+            flex-direction: column;
+            position: absolute;
+            top: 12%;
+            right: 12px;
+            background-color: #33313a;
+            color: gray;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10px;
+            display: none;
+        }
+        .active{
+            display: block;
+            animation-name: fadein;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+
+    }
+    
+}
+
+@include responsive(800px){
+    header{
+        .itens{
+            display: none;
+        }
+        .icon-menu-mobile{
+            display: block;
+            cursor: pointer;
+        }
+
+    }
+ }
+ 
+ 

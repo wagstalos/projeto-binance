@@ -1,0 +1,88 @@
+.s-resources{
+    margin-top: $gutter*8;
+    .s-resources__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 150%;
+            color: $gray-200;
+            background-color: $gray-light;
+            padding: 5px 10px;
+            border-radius: 50px;
+            &::before{
+                content:  url('./../img/icon-star.svg');
+                margin-right: 8px;
+            }
+        }
+    }
+    h2{
+        max-width: 550px;
+        font-size: 3.2rem;
+        color: $gray-dark;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: $gutter*5;
+        li{
+            padding: 10px;
+            width: 25%;
+            margin: $gutter;
+            transition: all .3s;
+            border-radius: 4px;
+            padding-bottom: $gutter*2;
+            &:hover{
+                background-color: $gray-light;
+            }
+            h3{
+                font-size: 1.6rem;
+                margin-top: $gutter*2;
+            }
+            p{
+                font-size: 1.5rem;
+                color: $gray-200;
+                margin-top: $gutter;
+                max-width: 80%;
+            }
+            img{
+                width: 50px;
+                background-color: #ebebed;
+                padding: 10px;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+@include responsive(800px){
+    .s-resources{
+        .s-resources__top{
+flex-direction: column-reverse;
+        }
+        h2{
+            max-width: 100%;
+            text-align: center;
+            margin-top: $gutter*2;
+        }
+        ul{
+            flex-direction: column;
+            li{
+                margin: 0;
+                width: 100%;
+                margin-bottom: $gutter;
+                text-align: center;
+                p{
+                    max-width: 100%;
+                }
+                img{
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.s-brand{
+    margin-top: $gutter*8;
+    margin-bottom: 92px;
+    h4{
+        font-size: 1.8rem;
+        margin-top: 50px;
+        margin-bottom: 23px;
+        color: $yellow;
+    }
+    .s-brand__logos{
+        display: flex;
+        img{
+            margin-right: 79px;
+        }
+    }
+   
+}

@@ -8,7 +8,6 @@
     outline: none;
     border: none;
     box-sizing: border-box;
-
     
     font-family: 'Lato', sans-serif;
 }
@@ -38,6 +37,7 @@ button{
     padding: 0 15px;
     margin: 0 auto;
 }
+
 @import '_mixins.scss';
 @import '_variables.scss';
 @import '_animations.scss';
@@ -46,3 +46,4 @@ button{
 @import '_s-brand.scss';
 @import '_buttons.scss';
 @import '_s-resources.scss';
+@import '_s-course.scss';

@@ -1,0 +1,40 @@
+.s-course{
+    padding: 80px 0;
+    h2{
+        font-size: 3.6rem;
+    }
+    h4{
+        font-size: 2rem;
+        font-weight: bold;
+        color: $gray-dark;
+        margin-top: $gutter*5;
+   
+    }
+    span{
+        color: $yellow;
+    }
+    p{
+        font-size: 1.6rem;
+        color: $gray-dark;
+        margin-top: $gutter*3;
+        line-height:20px;
+    }
+    .s-course__row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .s-course__col{
+        width: 48%;
+    }
+    .s-course__learn{
+        display: flex;
+    
+        img{
+            width: 150px;
+            margin-top: $gutter;
+            margin-right: $gutter;
+        }
+    }
+
+}

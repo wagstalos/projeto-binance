@@ -11,11 +11,7 @@ botoes.addEventListener("click", () => {
 //   loop: true,
 // });
 var typed3 = new Typed(".element", {
-  strings: [
-    "Aprenda programação voltada: criptomoedas",
-    "Aprenda programação voltada: NFT",
-    "Aprenda programação voltada: Blockchain",
-  ],
+  strings: [" criptomoedas", " NFT", " Blockchain"],
   typeSpeed: 50,
   backSpeed: 0,
   smartBackspace: true,

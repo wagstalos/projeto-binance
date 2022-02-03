@@ -11,8 +11,9 @@
     }
     .s-hero__row{
         display: flex;
+        justify-content: space-between;
         .tag-free{
-            margin-top: 100px;
+            margin-top: $gutter*8;
             color: $yellow;
             text-transform: uppercase;
             background-color: #00000063;
@@ -45,22 +46,20 @@
         }
         .s-hero__col--1{
             max-width: 674px;
-            margin-right: $gutter*15;
+            // margin-right: $gutter*15;
             z-index: 1;
             h1{
                 color: $white;
                 font-size: 48px;
                 line-height: 66px;
                 margin-bottom: $gutter;
-      
             }
             p{
                 font-size: 1.6rem;
                 line-height: 26px;
                 font-weight: 300;
                 color: $gray-light;
-                max-width: 611px;
-                
+                max-width: 611px;    
             }
             li{
                 width: 32%;
@@ -91,11 +90,12 @@
             background-color: $white;
             box-shadow: 0px 10px 50px rgba(78, 75, 89, 0.1);
             border-radius: 8px;
-            height: 632px;
-            margin-top:$gutter*10;
-            position: absolute;
-            right: 150px;
-            padding: 0 36px;
+            // height: 632px;
+            margin-top: $gutter*8;
+            margin-bottom: $gutter*2;
+            // position: absolute;
+            // right: 150px;
+            padding: 0 26px 26px 26px;
             .btn{
                 width: 100%;
                 text-align: center;
@@ -140,7 +140,9 @@
 @include responsive(800px){
     .s-hero{
         .s-hero__row{
-            flex-direction: column;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
             .tag-free{
                 display: flex;
                 align-items: center;
@@ -150,6 +152,9 @@
             .s-hero__col--1{
                 width: 100%;
                 margin-right: 0;
+                .hidden-mb{
+                    display: none;
+                }
                 .btn{
                     width: 80%;
                     display: flex;
@@ -167,17 +172,23 @@
                     text-align: center;
                 }
                 ul{
-                    flex-direction: column;
+                    flex-direction: row;
                     margin-top: $gutter*4;
                     align-items: center;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
                     li{
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        margin: 16px 0;
-                        width: 100%;
+                        margin: $gutter 0;
+                        width: 48%;
+                        padding: $gutter;
+                        p{
+                            margin: 0;
+                        }
                         img{
-                            margin: 0 20px;
+                            margin: 0;
                         }
                         span{
                             max-width: 100%;
@@ -185,11 +196,10 @@
                     }
                 }
                 .s-hero__card{
-                    width: 50%;
+                    width: 100%;
                 }
 
             }
-
             .s-hero__col--2{
                 position: relative;
                 right: 0;

@@ -38,3 +38,19 @@
     }
 
 }
+
+@include responsive(800px){
+    .s-course{
+        text-align: center;
+        .s-course__row{
+            flex-direction: column;
+        }
+        .s-course__col{
+            width: 100%;
+        }
+        .s-course__learn{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

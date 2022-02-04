@@ -22,6 +22,9 @@
         max-width: 550px;
         font-size: 3.2rem;
         color: $gray-dark;
+        span{
+            color: $yellow;
+        }
     }
 
     ul{

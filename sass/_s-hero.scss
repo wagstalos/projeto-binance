@@ -90,11 +90,8 @@
             background-color: $white;
             box-shadow: 0px 10px 50px rgba(78, 75, 89, 0.1);
             border-radius: 8px;
-            // height: 632px;
             margin-top: $gutter*8;
             margin-bottom: $gutter*2;
-            // position: absolute;
-            // right: 150px;
             padding: 0 26px 26px 26px;
             .btn{
                 width: 100%;
@@ -143,6 +140,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             align-items: center;
+            justify-content: center;
             .tag-free{
                 display: flex;
                 align-items: center;
@@ -201,10 +199,7 @@
 
             }
             .s-hero__col--2{
-                position: relative;
-                right: 0;
                 margin-top: 0;
-                margin: 0 auto;
             }
         }
     }

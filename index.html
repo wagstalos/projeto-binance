@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio Gama</title>
+    <title>Binance learn</title>
     <link rel="stylesheet" href="css/main.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -185,21 +188,26 @@
         <div class="container">
             <h4>Empresas que confiam em nosso trabalho</h4>
             <div class="s-brand__logos">
-                <img src="img/spotfy.svg" alt="Spotify">
-                <img src="img/google.svg" alt="Google">
-                <img src="img/facebook.svg" alt="Facebook">
-                <img src="img/facebook.svg" alt="Facebook">
-                <img src="img/facebook.svg" alt="Facebook">
-                <img src="img/facebook.svg" alt="Facebook">
-                <img src="img/facebook.svg" alt="Facebook">
-                <img src="img/facebook.svg" alt="Facebook">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/spotfy.svg" alt="Spotify"></div>
+                        <div class="swiper-slide"><img src="img/google.svg" alt="Google"></div>
+                        <div class="swiper-slide"> <img src="img/facebook.svg" alt="Facebook"></div>
+                        <div class="swiper-slide"><img src="img/facebook.svg" alt="Facebook"></div>
+                        <div class="swiper-slide"><img src="img/facebook.svg" alt="Facebook"></div>
+                        <div class="swiper-slide"><img src="img/facebook.svg" alt="Facebook"></div>
+                        <div class="swiper-slide"><img src="img/facebook.svg" alt="Facebook"></div>
+                        <div class="swiper-slide"><img src="img/facebook.svg" alt="Facebook"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
-        </div>
 
     </section>
 
     <section class="s-faq container">
-        <h3>Perguntas frequentes<abbr title="Frequently Asked Questions"> FAQ</abbr>s</h3>
+        <h2>Perguntas frequentes<abbr title="Frequently Asked Questions"> FAQ</abbr>s</h2>
         <dl class="faq">
             <dt>
                 <button type="button" aria-expanded="false" aria-controls="faq1_desc">Eu não sei nada sobre esse
@@ -223,32 +231,25 @@
                     conteúdos para estudar.
                 </div>
             </dd>
+
             <dt>
-                <button type="button" aria-expanded="false" aria-controls="faq3_desc">Ainda tem dúvidas?</button>
+                <button type="button" aria-expanded="false" aria-controls="faq3_desc">E se eu não for aprovado no
+                    processo seletivo?</button>
             </dt>
             <dd>
-                <div id="faq3_desc" class="desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, sint est! Dolor id, dolores eius
-                    nobis dolorum in, ab, cum quidem ipsum aperiam accusantium sit nisi laboriosam tempora est! Placeat?
+                <div id="faq3_desc" class="desc">Nesses casos, a gente indica estudar um pouquinho para se inscrever de
+                    novo na próxima edição. Inclusive, no nosso blog, redes sociais e newsletters existem diversos
+                    conteúdos para estudar.
                 </div>
             </dd>
-            <!-- <dt>
-                <button type="button" aria-expanded="false" aria-controls="faq4_desc">Do all parking facilities have the
-                    same enforcement rules?</button>
-            </dt>
-            <dd>
-                <div id="faq4_desc" class="desc">
-                    Some parking facility restrictions differ from others. Be sure to
-                    take note of the signs at each lot entrance.
-                </div>
-            </dd> -->
+
         </dl>
 
     </section>
 
     <footer>
         <div class="container">
-            <h3>Parceiria:</h3>
+            <h3>Parceria:</h3>
             <div class="d-flex">
                 <img src="img/binance.svg" alt="binance" width="150px">
                 <img src="img/gama.png" alt="gama" width="150px">
@@ -262,7 +263,32 @@
     <script src="js/main.js"></script>
     <script src="js/particules.min.js"></script>
     <script src="js/particules.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <script type="module">
+        var swiper = new Swiper(".mySwiper", {
+            // slidesPerView: 5,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 3,
+                    spaceBetween: 16,
+                },
+                600: {
+                    slidesPerView: 5,
+                },
+                1200: {
+                    slidesPerView: 5,
+                    spaceBetween: 32,
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

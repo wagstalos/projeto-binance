@@ -10,11 +10,14 @@
             line-height: 150%;
             color: $gray-200;
             background-color: $gray-light;
-            padding: 5px 10px;
+            padding: 0 10px;
             border-radius: 50px;
+            display: flex;
+            align-items: center;
             &::before{
-                content:  url('./../img/icon-star.svg');
+                content:  url('./../img/json.svg');
                 margin-right: 8px;
+                padding-top: 5px;
             }
         }
     }

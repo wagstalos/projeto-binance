@@ -10,6 +10,7 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -25,14 +26,14 @@
                             <a href="#projeto">O projeto </a>
                         </li>
                         <li>
-                            <a href="">Item menu 02</a>
+                            <a href="#binance">Binance</a>
                         </li>
                         <li>
-                            <a href="">Item menu 03</a>
+                            <a href="#faq">Dúvidas</a>
                         </li>
                     </ul>
                 </nav>
-                <button class=""> Comprar curso</button>
+                <button class="">Comece agora</button>
             </div>
             <div class="icon-menu-mobile" id='menu-mob'>
                 <img src="img/menu-icon.svg" alt="menu mobile" class="">
@@ -60,16 +61,19 @@
         <div id="particles-js"></div>
         <div class="container s-hero__row">
             <div class="s-hero__col--1">
-                <h4 class="tag-free">100% gratuito</h4>
+                <div class="tag-free_center">
+                    <h4 class="tag-free">100% gratuito</h4>
+                </div>
+
                 <h1 title="Aprenda programação voltada para blockchain">
                     Aprenda programação voltada: <span class="element"></span>
                 </h1>
 
                 <p>Serão 100 bolsas de treinamento para uma capacitação 100% gratuita e online,
-                    com profissionais renomados no mercado, e terá a oportunidade de desenvolver
-                    tarbalhar na Binance.</p>
+                    com profissionais renomados no mercado, e terá a oportunidade de
+                    trabalhar na Binance.</p>
                 <div class="s-hero__btn">
-                    <a href="#" class="btn btn__primary">Comece agora</a>
+                    <a href="#inscrever" class="btn btn__primary">Comece agora</a>
                 </div>
 
                 <div>
@@ -101,7 +105,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-hero__col--2">
+            <div class="s-hero__col--2" id="inscrever" data-aos="fade-up" data-aos-duration="1000">
                 <img src="img/btc-hero.png" alt="">
                 <form action="">
                     <h3>Venha fazer parte desse time! </h3>
@@ -123,22 +127,22 @@
                 <p>Mais de 1.000 empresas que utilizam</p>
             </div>
             <ul>
-                <li>
+                <li data-aos="fade-down" data-aos-duration="500">
                     <img src="img/hot-g.png" alt="">
                     <h3>Ensino</h3>
                     <p>Aprenda com os melhores do mercado</p>
                 </li>
-                <li>
+                <li data-aos="fade-down" data-aos-duration="1000">
                     <img src="img/thumb-up-g.png" alt="">
                     <h3>Tecnologia</h3>
                     <p>Ensinamos as melhores tecnologias do mercado</p>
                 </li>
-                <li>
+                <li data-aos="fade-down" data-aos-duration="1500">
                     <img src="img/hot-g.png" alt="">
                     <h3>Tecnologia</h3>
                     <p>Ensinamos as melhores tecnologias do mercado</p>
                 </li>
-                <li>
+                <li data-aos="fade-down" data-aos-duration="2000">
                     <img src="img/hot-g.png" alt="">
                     <h3>Contratação</h3>
                     <p>Os melhores alunos irão ser contratado pela binance</p>
@@ -150,11 +154,11 @@
 
     <section class="s-course">
         <div class="container s-course__row">
-            <div class="s-course__col">
+            <div class="s-course__col" data-aos="fade-up" data-aos-duration="1000">
                 <img src="img/img-curso.png" alt="">
             </div>
 
-            <div class="s-course__col">
+            <div class="s-course__col" data-aos="fade-left" data-aos-duration="1000">
                 <h2>Junte-se à melhor escola de programação voltada para o mundo de <span>criptomoedas!</span> </h2>
                 <p>Junte-se à melhor escola de programação voltada para o mundo cripto,
                     e ainda tenha a chance trabalhar na maior corretora de criptomoedas domundo <strong>os melhores
@@ -170,8 +174,8 @@
         </div>
     </section>
 
-    <section class="s-binance">
-        <div class="container">
+    <section class="s-binance" id="binance" data-aos-duration="1000">
+        <div class="container" data-aos="zoom-in">
             <img src="img/icon-binance.svg" alt="logo binance">
             <h2>Sobre a Binance </h2>
             <p>A Binance é uma bolsa global de criptomoedas que
@@ -194,11 +198,9 @@
                         <div class="swiper-slide"><img src="img/spotfy.svg" alt="Spotify"></div>
                         <div class="swiper-slide"><img src="img/google.svg" alt="Google"></div>
                         <div class="swiper-slide"> <img src="img/facebook.svg" alt="Facebook"></div>
+                        <div class="swiper-slide"><img src="img/instagram.svg" alt="instagram"></div>
                         <div class="swiper-slide"><img src="img/facebook.svg" alt="Facebook"></div>
-                        <div class="swiper-slide"><img src="img/facebook.svg" alt="Facebook"></div>
-                        <div class="swiper-slide"><img src="img/facebook.svg" alt="Facebook"></div>
-                        <div class="swiper-slide"><img src="img/facebook.svg" alt="Facebook"></div>
-                        <div class="swiper-slide"><img src="img/facebook.svg" alt="Facebook"></div>
+                        <div class="swiper-slide"><img src="img/microsoft.svg" alt="microsoft"></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -206,7 +208,7 @@
 
     </section>
 
-    <section class="s-faq container">
+    <section class="s-faq container" id="faq">
         <h2>Perguntas frequentes<abbr title="Frequently Asked Questions"> FAQ</abbr>s</h2>
         <dl class="faq">
             <dt>
@@ -249,13 +251,13 @@
 
     <footer>
         <div class="container">
-            <h3>Parceria:</h3>
+            <h3>Realização:</h3>
             <div class="d-flex">
                 <img src="img/binance.svg" alt="binance" width="150px">
                 <img src="img/gama.png" alt="gama" width="150px">
             </div>
             <hr>
-            <p><a href="">Desenvolvido por Wagner Paulo</a></p>
+            <p><a href="http://portfolio.wpsgames.com.br/">Desenvolvido por Wagner Paulo</a></p>
         </div>
     </footer>
 
@@ -265,10 +267,11 @@
     <script src="js/particules.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script type="module">
+        AOS.init();
         var swiper = new Swiper(".mySwiper", {
-            // slidesPerView: 5,
             spaceBetween: 30,
             pagination: {
                 el: ".swiper-pagination",

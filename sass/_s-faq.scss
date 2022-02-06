@@ -3,6 +3,7 @@
     padding: $gutter*5 ;
     font-size: 1.6rem;
     background-color: $gray-light;
+    margin-bottom: $gutter*5;
     h2{
       font-size: 3.2rem;
       color: $gray-dark;
@@ -30,7 +31,7 @@ dl.faq button {
     padding: 0;
     margin-left: 1.5em;
     padding-bottom: 20px;
-    border-bottom: 1px solid $gray-light;
+    border-bottom: 1px solid #d4d4d4;
   }
   
   dl.faq .desc {

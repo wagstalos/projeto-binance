@@ -141,11 +141,17 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
+            .tag-free_center{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
             .tag-free{
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 margin-top: 50px;
+                margin-bottom: $gutter;
             }
             .s-hero__col--1{
                 width: 100%;

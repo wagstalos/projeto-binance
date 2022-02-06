@@ -1,3 +1,4 @@
+
 const botoes = document.getElementById("menu-mob");
 const menuMobile = document.getElementById("menu-mobile");
 
@@ -7,18 +8,13 @@ botoes.addEventListener("click", () => {
 
 var typed3 = new Typed(".element", {
   strings: [" criptomoedas", " NFT", " Blockchain"],
-  typeSpeed: 50,
+  typeSpeed: 60,
   backSpeed: 0,
   smartBackspace: true,
   // this is a default
 });
-("use strict");
 
-/*
- *   @constructorDisclosureButton
- *
- *
- */
+("use strict");
 class DisclosureButton {
   constructor(buttonNode) {
     this.buttonNode = buttonNode;

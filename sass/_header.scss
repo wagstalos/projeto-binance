@@ -44,8 +44,8 @@ header{
         padding: 10px 25px;
         border-radius: 10px;
         &:before{
-            content:  url('./../img/icon-star.svg');
-            margin-right: 16px;
+            content:  url('./../img/json.svg');
+            margin-right: $gutter;
         }
     }
     .icon-menu-mobile{

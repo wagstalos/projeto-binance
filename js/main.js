@@ -1,9 +1,11 @@
-
 const botoes = document.getElementById("menu-mob");
 const menuMobile = document.getElementById("menu-mobile");
 
+const iconMobile = document.getElementById("icon");
+
 botoes.addEventListener("click", () => {
   menuMobile.classList.toggle("active");
+  iconMobile.classList.toggle("active");
 });
 
 var typed3 = new Typed(".element", {

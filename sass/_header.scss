@@ -53,7 +53,7 @@ header{
         .menu-mobile{
             flex-direction: column;
             position: absolute;
-            // top: 12%;
+            top: 70px;
             right: 12px;
             background-color: #000000eb;
             color: gray;
@@ -95,4 +95,52 @@ header{
     }
  }
  
- 
+ .icon {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    right: 0;
+    cursor: pointer;
+    // background: #000;
+}
+.hamburguer{
+    width: 25px;
+    height: 3px;
+    border-radius: 3px;
+    background: $yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: .5s;
+}
+.hamburguer:before,.hamburguer:after{
+    content: '';
+    position: absolute;
+    border-radius: 3px;
+    width: 35px;
+    height: 3px;
+    background: $yellow;
+    box-shadow: 0 2px 5px (0,0,0,0.2);
+    transition: .5s;
+}
+.hamburguer:before{
+    top: -10px;
+}
+.hamburguer:after{
+    top: 10px;
+}
+.icon.active .hamburguer{
+    background: rgba(0, 0, 0,0);
+}
+.icon.active .hamburguer:before{
+    top: 0;
+    transform: rotate(45deg);
+}
+.icon.active .hamburguer:after{
+    top: 0;
+    transform: rotate(135deg);
+}

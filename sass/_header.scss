@@ -53,9 +53,9 @@ header{
         .menu-mobile{
             flex-direction: column;
             position: absolute;
-            top: 12%;
+            // top: 12%;
             right: 12px;
-            background-color: #33313a;
+            background-color: #000000eb;
             color: gray;
             align-items: center;
             padding: 20px;
@@ -73,8 +73,19 @@ header{
 
 @include responsive(800px){
     header{
+        z-index: 20;
         .itens{
             display: none;
+        }
+        nav{
+            ul{
+                flex-direction: column;
+                li{
+                    // margin-right: 0;
+                    margin: 10px;
+                    text-align: center;
+                }
+            }
         }
         .icon-menu-mobile{
             display: block;

@@ -46,7 +46,6 @@
         }
         .s-hero__col--1{
             max-width: 674px;
-            // margin-right: $gutter*15;
             z-index: 1;
             h1{
                 color: $white;
@@ -74,10 +73,11 @@
                 }
                 p{
                     color: #00F4C8;
-                    background-color: #00f4c852;
-                    padding: 0 7px;
+                    // background-color: #00f4c852;
+                    background-color: #081324;
+                    padding: 0 11px;
                     border-radius: 50px;
-                    font-size: 1.1rem;
+                    font-size: 1.4rem;
                 }
             }
  
@@ -93,6 +93,7 @@
             margin-top: $gutter*8;
             margin-bottom: $gutter*2;
             padding: 0 26px 26px 26px;
+            z-index: 1;
             .btn{
                 width: 100%;
                 text-align: center;

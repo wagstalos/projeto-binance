@@ -138,3 +138,22 @@ function validateForm(form) {
 
   return true;
 }
+
+//
+var btc = document.getElementById("bitcoin");
+var ethereum = document.getElementById("ethereum");
+var uni = document.getElementById("uni");
+
+var liveprice = {
+  async: true,
+  scroosDomain: true,
+  url: "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Clitecoin%2Cethereum%2Cdogecoin%2Cuniswap&vs_currencies=usd",
+  method: "GET",
+  headers: {},
+};
+
+$.ajax(liveprice).done(function (response) {
+  btc.innerHTML = response.bitcoin.usd;
+  ethereum.innerHTML = response.ethereum.usd;
+  uni.innerHTML = response.uniswap.usd;
+});

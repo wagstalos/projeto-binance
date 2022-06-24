@@ -9,6 +9,7 @@
         top: 10%;
         z-index: 0;
     }
+
     .s-hero__row{
         display: flex;
         justify-content: space-between;
@@ -33,13 +34,15 @@
                 img{
                
                      &:last-child{
-                        margin-top: 15px;
+                        margin: 5px;
                      }
                 }
                 span{
                     max-width: 166px;
-                    font-size: 1.6rem;
+                    font-size: 1.4rem;
                     line-height: 24px;
+                    font-weight: 700;
+
                 }
                 
             }
@@ -61,20 +64,41 @@
                 max-width: 611px;    
             }
             li{
-                width: 32%;
+                width: 25%;
+                padding: $gutter/2;
                 background-color: #0c1f3c;
-                padding: 15px;
-                border-radius: 15px;
-                gap:$gutter;
+                border-radius: 5px;
+
                 .s-hero__card{
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                   .s-hero__card--price{
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                    }
+                    .bg__btc{
+                        background-color: #f7931a;
+                        border-radius: 5px;
+                    }
+                    .bg__eth{
+                        background-color: #0082fe;
+                        border-radius: 5px;
+                    }
+                    .bg__uni{
+                        background-color: #ff007a;
+                        border-radius: 5px;
+                    }
+                    p{
+                        &::before{
+                            content: '$ ';
+                        }
+                    }
                 }
                 p{
                     color: #00F4C8;
-                    // background-color: #00f4c852;
-                    background-color: #081324;
+                    // background-color: #081324;
                     padding: 0 11px;
                     border-radius: 50px;
                     font-size: 1.4rem;
@@ -135,7 +159,6 @@
         }
     }
 }
-
 @include responsive(800px){
     .s-hero{
         .s-hero__row{
@@ -188,8 +211,8 @@
                         align-items: center;
                         justify-content: space-between;
                         margin: $gutter 0;
-                        width: 48%;
-                        padding: $gutter;
+                        width: 40%;
+                        // padding: $gutter;
                         p{
                             margin: 0;
                         }

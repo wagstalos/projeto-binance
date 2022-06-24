@@ -113,27 +113,45 @@
                     <ul>
                         <li>
                             <div class="s-hero__card">
-                                <img src="img/btc-icon.svg" alt="btc-icon">
-                                <span>BTC</span>
-                                <p>$36456</p>
-                            </div>
-                            <img class="hidden-mb" src="img/grafico.svg" alt="btc-icon">
+                                <div class="bg__btc">
+                                    <img src="img/btc-icon.svg" alt="btc-icon">
+                                </div>
+
+                                <div class="s-hero__card--price">
+                                    <span>BTC</span>
+                                    <p id="bitcoin">...</p>
+                                </div>
+                                <!-- </div>
+                            <img class="hidden-mb" src="img/grafico.svg" alt="btc-icon"> -->
                         </li>
                         <li>
                             <div class="s-hero__card">
-                                <img src="img/ethereum-icon.svg" alt="btc-icon">
-                                <span>ETH</span>
-                                <p>$3656</p>
-                            </div>
-                            <img class="hidden-mb" src="img/ethereum-grafico.svg" alt="btc-icon">
+                                <div class="bg__eth">
+                                    <img src="img/ethereum-icon.svg" alt="btc-icon">
+                                </div>
+
+                                <div class="s-hero__card--price">
+                                    <span>ETH</span>
+                                    <p id="ethereum">...</p>
+                                </div>
+                                </div>
+                              
+                            <!-- <img class="hidden-mb" src="img/ethereum-grafico.svg" alt="btc-icon"> -->
                         </li>
                         <li>
                             <div class="s-hero__card">
-                                <img src="img/uniswap-icon.svg" alt="btc-icon">
-                                <span>UNI</span>
-                                <p class="color-red">$11</p>
+                                <div  class="bg__uni">
+                                    <img src="img/uniswap-icon.svg" alt="btc-icon">
+                                </div>
+                               
+
+                                <div class="s-hero__card--price">
+                                    <span>UNI</span>
+                                    <p id="uni">...</p>
+                                </div>
+                         
                             </div>
-                            <img class="hidden-mb" src="img/uniswap-grafico.svg" alt="btc-icon">
+                            <!-- <img class="hidden-mb" src="img/uniswap-grafico.svg" alt="btc-icon"> -->
                         </li>
                     </ul>
                 </div>
@@ -145,7 +163,7 @@
                     <p>Para se increver no programa basta preencher o formulário!</p>
                     <input type="text" name="input" placeholder=" Nome" required>
                     <input type="email" name="input" placeholder=" E-mail">
-                    <input type="phone" name="input" placeholder="Telefone">
+                    <input type="number" name="input" placeholder="Telefone">
                     <a href="#" class="btn btn__primary"> INSCREVER-SE</a>
                 </form>
 
@@ -284,10 +302,10 @@
 
     <footer>
         <div class="container">
-            <h3>Realização:</h3>
+            <h3>A empresa:</h3>
             <div class="d-flex">
                 <img src="img/binance.svg" alt="binance" width="150px">
-                <!-- <img src="img/gama.png" alt="gama" width="150px"> -->
+                <img src="img/gama.png" alt="gama" width="150px">
             </div>
             <hr>
             <p><a href="http://portfolio.wpsgames.com.br/">Desenvolvido por Wagner Paulo</a></p>
@@ -295,6 +313,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     <script src="js/particules.min.js"></script>
     <script src="js/particules.js"></script>

@@ -153,7 +153,19 @@ var liveprice = {
 };
 
 $.ajax(liveprice).done(function (response) {
-  btc.innerHTML = response.bitcoin.usd;
-  ethereum.innerHTML = response.ethereum.usd;
-  uni.innerHTML = response.uniswap.usd;
+  btc.innerHTML = response.bitcoin.usd.toLocaleString("en-US", {
+    style: "currency",
+    currency: "USD",
+    minimumFractionDigits: 0,
+  });
+  ethereum.innerHTML = response.ethereum.usd.toLocaleString("en-US", {
+    style: "currency",
+    currency: "USD",
+    minimumFractionDigits: 0,
+  });;
+  uni.innerHTML = response.uniswap.usd.toLocaleString("en-US", {
+    style: "currency",
+    currency: "USD",
+    minimumFractionDigits: 0,
+  });;
 });

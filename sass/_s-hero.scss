@@ -90,11 +90,11 @@
                         background-color: #ff007a;
                         border-radius: 5px;
                     }
-                    p{
-                        &::before{
-                            content: '$ ';
-                        }
-                    }
+                    // p{
+                    //     &::before{
+                    //         content: '$ ';
+                    //     }
+                    // }
                 }
                 p{
                     color: #00F4C8;
